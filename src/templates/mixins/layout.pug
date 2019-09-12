@@ -1,0 +1,16 @@
+mixin layout($title, $keywords, $description)
+    doctype html
+    html
+        head
+            meta(charset="utf-8")
+            title=$title
+            - if ($keywords)
+                meta(keywords=$keywords)
+            - if ($description)
+                meta(description=$description)
+            meta(name="viewport" content="width=device-width")
+            style
+                include ../../assets/style.css
+            script
+                include ../../assets/js/rem.js
+        body

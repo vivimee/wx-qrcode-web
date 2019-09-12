@@ -31,7 +31,7 @@ entries.forEach((entry) => {
     htmlPlugins.push(
         new HtmlWebpackPlugin({
             template,
-            filename: `html/${entry.name}.html`,
+            filename: `${entry.name}.html`,
             chunks: [entry.name],
             minify: {
                 collapseWhitespace: true,
@@ -47,7 +47,7 @@ export default {
         filename: 'js/[name].[hash].js',
         chunkFilename: 'js/[name].[chunkhash].js',
         path: DIST_DIR,
-        publicPath: '../',
+        publicPath: './',
     },
     devtool: 'source-map',
     resolve: {

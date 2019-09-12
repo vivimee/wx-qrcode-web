@@ -24,7 +24,7 @@ const devServerOptions = {
     hot: true,
     noInfo: true,
     open: true,
-    openPage: 'html/index.html',
+    openPage: 'index.html',
     stats: {
         chunks: false,
         assets: false,
